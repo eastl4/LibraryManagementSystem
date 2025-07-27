@@ -53,7 +53,7 @@ public class LoginController {
 
             // Chuyển sang màn hình Menu chính
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainMenu.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/library/MainMenu.fxml"));
                 Parent root = loader.load();
 
                 Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

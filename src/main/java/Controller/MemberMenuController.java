@@ -167,7 +167,7 @@ public class MemberMenuController implements MemberInventoryObserver {
     @FXML
     private void onAddMember(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AddMemberForm.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/library/AddMemberForm.fxml"));
             Parent root = loader.load();
 
             AddMemberFormController addMemberFormController = loader.getController();
@@ -207,7 +207,7 @@ public class MemberMenuController implements MemberInventoryObserver {
         }
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("AddMemberForm.fxml")); // Tái sử dụng form
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/library/AddMemberForm.fxml")); // Tái sử dụng form
             Parent root = loader.load();
 
             AddMemberFormController addMemberFormController = loader.getController();
@@ -263,7 +263,7 @@ public class MemberMenuController implements MemberInventoryObserver {
     private void onBack() {
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/library/MainMenu.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) memberTable.getScene().getWindow();
 

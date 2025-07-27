@@ -27,7 +27,7 @@ public class MainMenuController {
     @FXML
     public void switchToBooks(ActionEvent event) throws IOException {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/BookMenu.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/library/BookMenu.fxml"));
             Parent root = loader.load();
 
             BookMenuController controller = loader.getController();
