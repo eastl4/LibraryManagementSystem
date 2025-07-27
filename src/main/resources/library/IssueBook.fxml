@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="496.0" stylesheets="@../CSS/addBook.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.library.Controller.IssueBookController">
+
+    <children>
+
+        <!-- Trường nhập Book ISBN -->
+        <Label layoutX="47.0" layoutY="79.0" text="Mã sách:" />
+        <TextField fx:id="isbnField" layoutX="141.0" layoutY="74.0" prefHeight="26.0" prefWidth="255.0" />
+
+        <!-- Trường nhập Member ID -->
+        <Label layoutX="45.0" layoutY="117.0" text="ID người mượn:" />
+        <TextField fx:id="memberField" layoutX="141.0" layoutY="112.0" prefHeight="26.0" prefWidth="255.0" />
+
+        <!-- Trường nhập Issued Date -->
+        <Label layoutX="46.0" layoutY="156.0" text="Ngày mượn" />
+        <DatePicker fx:id="issuedDateField" layoutX="141.0" layoutY="151.0" prefHeight="26.0" prefWidth="255.0" />
+
+        <!-- Nút điều hướng -->
+        <Button layoutX="119.0" layoutY="222.0" onAction="#handleIssue" style="-fx-background-color: green;" text="Mượn sách">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Button>
+        <Button layoutX="283.0" layoutY="222.0" onAction="#handleCancel" prefHeight="41.0" prefWidth="109.0" style="-fx-background-color: #f22323;" text="Hủy" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24307b" height="310.0" layoutX="1.0" stroke="transparent" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24307b" height="60.0" layoutX="-9.0" stroke="transparent" strokeType="INSIDE" width="506.0" />
+      <Label layoutX="21.0" layoutY="16.0" text="Mượn sách" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>

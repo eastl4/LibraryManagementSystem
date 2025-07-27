@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="issueMenuPane" prefHeight="720.0" prefWidth="1024.0" stylesheets="@../CSS/tableviewBookMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.library.Controller.IssuedBookMenuController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dee0ee" height="82.0" layoutY="78.0" stroke="BLACK" strokeType="INSIDE" width="1024.0" />
+
+        <!-- Tiêu đề -->
+        <Label layoutX="105.0" layoutY="28.0" text="QUẢN LÝ SÁCH MƯỢN">
+            <font>
+                <Font name="Arial Bold" size="38.0" />
+            </font>
+        </Label>
+        <TextField fx:id="searchField" layoutX="775.0" layoutY="103.0" prefHeight="32.0" prefWidth="214.0" promptText="Tìm kiếm sách mượn" />
+
+        <!-- Bảng TableView căn giữa -->
+        <TableView fx:id="issuedBookTable" layoutX="85.0" layoutY="183.0" prefHeight="482.0" prefWidth="791.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="100" text="ID" />
+                <TableColumn fx:id="isbnColumn" prefWidth="100" text="Book ISBN" />
+                <TableColumn fx:id="memberColumn" prefWidth="222.39999389648438" text="Member ID" />
+                <TableColumn fx:id="issuedDateColumn" prefWidth="189.5999755859375" text="Ngày mượn" />
+                <TableColumn fx:id="dueDateColumn" prefWidth="188.7999267578125" text="Hạn trả sách" />
+            </columns>
+        </TableView>
+
+        <!-- Các nút ở dưới bảng -->
+
+        <Button layoutX="153.0" layoutY="96.0" onAction="#openIssueBookWindow" prefHeight="42.0" prefWidth="118.0" text="Mượn sách" />
+        <Button layoutX="363.0" layoutY="96.0" onAction="#onReturnBook" prefHeight="42.0" prefWidth="118.0" text="Trả sách" />
+        <Button layoutX="9.0" layoutY="8.0" onAction="#onBack" text="Menu" />
+      <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="3.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="qrImageView" fitHeight="482.0" fitWidth="492.0" layoutX="554.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" visible="false">
+           <image>
+               <Image url="@../Image/QR.png" />
+           </image>
+        </ImageView>
+
+
+    </children>
+</AnchorPane>

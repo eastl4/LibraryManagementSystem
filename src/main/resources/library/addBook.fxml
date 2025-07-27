@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="310.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.library.Controller.addBookController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7f7f7" height="334.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="496.0" />
+      <TextField fx:id="isbnField" layoutX="50.0" layoutY="86.0" prefHeight="26.0" prefWidth="384.0" promptText="ISBN" style="-fx-border-color: grey; -fx-border-radius: 5;" />
+      <TextField fx:id="authorField" layoutX="273.0" layoutY="140.0" prefHeight="26.0" prefWidth="160.0" promptText="Tác giả" style="-fx-border-color: grey; -fx-border-radius: 5;" />
+      <TextField fx:id="availableField" layoutX="50.0" layoutY="199.0" prefHeight="26.0" prefWidth="194.0" promptText="Số sách đang có" style="-fx-border-color: grey; -fx-border-radius: 5;" />
+      <TextField fx:id="titleField" layoutX="50.0" layoutY="140.0" prefHeight="26.0" prefWidth="217.0" promptText="Tên sách" style="-fx-border-color: grey; -fx-border-radius: 5;" />
+      <TextField fx:id="quantityField" layoutX="249.0" layoutY="198.0" prefHeight="26.0" prefWidth="185.0" promptText="Tổng số lượng sách" style="-fx-border-color: grey; -fx-border-radius: 5;" />
+      <Button layoutX="193.0" layoutY="242.0" mnemonicParsing="false" onAction="#handleAddBook" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #42b76c;" stylesheets="@../CSS/addBook.css" text="Thêm sách">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="54.0" layoutY="68.0" text="MÃ SÁCH (ISBN)">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="52.0" layoutY="120.0" text="TÊN SÁCH">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="276.0" layoutY="122.0" text="TÁC GIẢ">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="180.0" text="SỐ LƯỢNG SẴN CÓ">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="251.0" layoutY="179.0" text="TỔNG SỐ LƯỢNG">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Button id="dong" layoutX="16.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="42.0" prefWidth="81.0" style="-fx-background-color: #4256a6; -fx-border-color: black;" stylesheets="@../CSS/addBook.css" text="Đóng" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#24307b" height="60.0" layoutX="-1.0" layoutY="-2.0" stroke="transparent" strokeType="INSIDE" width="495.0" />
+      <Button id="themSachAPI" layoutX="346.0" layoutY="7.0" mnemonicParsing="false" onAction="#onOpenSearchAPI" prefHeight="42.0" prefWidth="138.0" stylesheets="@../CSS/addBook.css" text="Thêm sách API">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="12.0" layoutY="15.0" text="Thêm sách" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
