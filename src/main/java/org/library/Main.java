@@ -1,4 +1,4 @@
-//package org.library;
+package org.library;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
 
-            Parent root = FXMLLoader.load(getClass().getResource("/Login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/org/library/Login.fxml"));
             Scene scene = new Scene(root);
 
 
