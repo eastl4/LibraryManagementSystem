@@ -1,0 +1,44 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-font-size: 19px;               /* thêm cỡ chữ 19px */
+    -fx-text-fill: #fff4f4;            /* chỉnh lại đúng thuộc tính màu chữ */
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #2f265b;
+    -fx-text-fill: white;
+    -fx-font-size: 19px;              /* đảm bảo giữ nguyên cỡ chữ khi hover */
+    -fx-border-radius: 5;             /* giữ giống trạng thái thường */
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 4, 0, 0, 2);
+}
+.button {
+    -fx-background-color: transparent;
+    -fx-font-size: 19px;               /* thêm cỡ chữ 19px */
+    -fx-text-fill: #fff4f4;            /* chỉnh lại đúng thuộc tính màu chữ */
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #2f265b;
+    -fx-text-fill: white;
+    -fx-font-size: 19px;              /* đảm bảo giữ nguyên cỡ chữ khi hover */
+    -fx-border-radius: 5;             /* giữ giống trạng thái thường */
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 4, 0, 0, 2);
+}
